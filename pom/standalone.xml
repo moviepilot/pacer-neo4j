@@ -17,6 +17,14 @@
             <outputDirectory>/</outputDirectory>
             <unpack>true</unpack>
             <scope>runtime</scope>
+            <excludes>
+                <exclude>org.neo4j:*</exclude>
+                <exclude>org.scala-lang:*</exclude>
+                <exclude>org.apache*:*</exclude>
+                <exclude>org.codehaus.jackson*:*</exclude>
+                <exclude>javax.transaction:jta</exclude>
+                <exclude>javax.xml.stream:stax-api</exclude>
+            </excludes>
         </dependencySet>
     </dependencySets>
 </assembly>
